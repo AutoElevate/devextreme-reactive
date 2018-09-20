@@ -29,8 +29,8 @@ export const getTableTargetColumnIndex = (
 ) => getTargetColumnGeometries(columnGeometries, sourceIndex)
   .findIndex(({ left, right }) => offset > left && offset < right);
 
+const ANIMATION_DURATION = 0;
 
-const ANIMATION_DURATION = 200;
 
 const getAnimationProgress = animation => (
   new Date().getTime() - animation.startTime) / ANIMATION_DURATION;
